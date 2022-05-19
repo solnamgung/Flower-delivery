@@ -5,6 +5,8 @@ import org.hibernate.annotations.Nationalized;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
+//All entities must define an identifier that uniquely identifies them. we express this by using @Id annotation.
+//Flower for your company to sell
 @Entity
 @Table(name="plant")
 public class Flower extends Plant {
@@ -15,6 +17,7 @@ public class Flower extends Plant {
 
     @Nationalized //should use @Nationalized instead of @Type=nstring
     private String name;
+
     private String color;
 
     @Column(precision = 12, scale = 4)

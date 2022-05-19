@@ -2,6 +2,13 @@ package com.example.flowerDelivery.dto;
 
 import java.math.BigDecimal;
 
+/*
+* DTO : (Data transfer object) - purpose :
+* 1.simplify and document interaction between front-end and Controller
+* 2. Conceal database structures.
+* 3. Limit the amount of data exchanged
+* 4.  Customize display data to meet the needs of front end.
+* */
 public class PlantDTO {
     private String name;
     private BigDecimal price;
